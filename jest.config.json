@@ -1,0 +1,12 @@
+{
+  "clearMocks": true,
+  "coverageProvider": "v8",
+  "moduleFileExtensions": ["js", "ts"],
+
+  "roots": ["<rootDir>/src/"],
+
+  "testMatch": ["**/test/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"],
+  "transform": {
+    "^.+\\.(ts|tsx)$": "ts-jest"
+  }
+}
