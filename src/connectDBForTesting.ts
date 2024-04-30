@@ -5,8 +5,6 @@ export const connectDB = async () => {
   try {
     await mongoose.connect(process.env.DB);
 
-    const { drivers } = mongoose.connection.collections;
-    drivers.ensureIndex({ "location": "2dsphere" });
   } catch (error) {
     console.log("DB connect error");
   }
