@@ -34,10 +34,10 @@ export const create = async (
   res: Response,
   next: NextFunction
 ): Promise<void> => {
-  const { email } = req.body;
+  const body = req.body;
 
   try {
-    const newDriver = await Driver.create({ email });
+    const newDriver = await Driver.create(body);
     res.status(StatusCodes.CREATED).send(newDriver);
   } catch (err) {
     next(err);
