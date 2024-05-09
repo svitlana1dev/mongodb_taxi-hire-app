@@ -26,6 +26,10 @@ $ npm run start:dev
 $ npm run build
 $ npm run start
 ```
+##### Or run Docker Containers
+```bash
+$ docker-compose up
+```
 
 ##### 4. Test the app:
 
@@ -39,5 +43,5 @@ $ npm run test
 |--------|--------------------------|---------------------------|
 | GET    | /api/drivers?lng=0&lat=0 | Get list Of a nearby taxi |
 | POST   | /api/drivers             | Add a new driver          |
-| POT    | /api/drivers/:id         | Edit driver data          |
+| POST    | /api/drivers/:id         | Edit driver data          |
 | DETELE | /api/drivers/:id         | Delete driver by id       |
