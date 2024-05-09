@@ -41,7 +41,7 @@ $ npm run test
 
 | Method | Route                    | Description               |
 |--------|--------------------------|---------------------------|
-| GET    | /api/drivers?lng=0&lat=0 | Get list Of a nearby taxi |
+| GET    | /api/drivers?lng=0&lat=0 | Get list of a nearby taxi |
 | POST   | /api/drivers             | Add a new driver          |
 | POST    | /api/drivers/:id         | Edit driver data          |
 | DETELE | /api/drivers/:id         | Delete driver by id       |
