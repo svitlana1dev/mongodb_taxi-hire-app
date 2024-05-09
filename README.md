@@ -26,7 +26,7 @@ $ npm run start:dev
 $ npm run build
 $ npm run start
 ```
-##### Or run Docker Containers
+###### Or run Docker Containers
 ```bash
 $ docker-compose up
 ```
