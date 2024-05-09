@@ -19,8 +19,6 @@ app.use(morgan("combined", { stream: accessLogStream }));
 
 mongoose.Promise = global.Promise;
 if (process.env.NODE_ENV !== "test") {
-  console.log(process.env.DB);
-  console.log(process.env.NODE_ENV);
   mongoose.connect(process.env.DB);
 }
 
