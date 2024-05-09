@@ -3,10 +3,13 @@
   "coverageProvider": "v8",
   "moduleFileExtensions": ["js", "ts"],
 
-  "roots": ["<rootDir>/src/"],
+  "roots": ["<rootDir>"],
 
-  "testMatch": ["**/test/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"],
+  "testMatch": ["**/tests/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
   "transform": {
     "^.+\\.(ts|tsx)$": "ts-jest"
-  }
+  },
+  "testPathIgnorePatterns": [
+    "<rootDir>/tests/connect-db-for-testing.ts"
+  ]
 }
